@@ -1,0 +1,136 @@
+
+{% load static %}
+<!Doctype html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Paintings</title>
+    <link rel ="icon" type="images/x-icon" href="{% static '/images/logo.ico' %}">
+     <link rel="stylesheet" href="{% static '/css/department.css' %}">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+<style>
+  h2, h3{
+    color:blanchedalmond ;
+  }
+  body{
+  background-image: url("{%static 'images/natural-history-museum-london-1366x768_97975-mm-90.jpg'%}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left ;
+        width: 33%;
+        height: 33%;
+        padding: 10px;
+      }
+      
+  
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+</head>
+<body>
+{% include 'pages/navbar.html' %}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+      <h3> <center> PAINTINGS</h3>
+        <br>
+        <br>
+        <br>
+<center>
+    <h2><strong> PAINTINGS OF JUAN LUNA</strong></h2>
+    <br>
+    <br>
+    <center>
+        <div class="row">
+  <div class="column">
+    <img src="{% static '/images/Spoliarium 1884.png' %}" alt="Snow" style="float:center;width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/El Pacto de Sangre (The Blood Compact) 1886.jpg' %}" alt="Forest" style="float:center;width:60%;height:60%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Las Damas Romanas (The Roman Maidens) 1882.jpg' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+</div>
+<br>
+<br>
+<br>
+ <h2><strong>PAINTINGS OF LEONARDO DA VINCI</strong></h2>
+<br>
+<br>
+<div class="row">
+  <div class="column">
+   
+    <img src="{% static '/images/Ginevra de_ Benci 1474-1478.jpg' %}" alt="Snow" style="float:center;width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Mona Lisa 1503-1506.jpg' %}" alt="Forest" style="float:center;width:60%;height:50%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Saint John The Baptist 1513-1516.jpg' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+  </div>
+  <br>
+        <br>
+        <br>
+        
+ <h2><strong> PAINTINGS OF PABLO PICASSO</strong></h2>
+    <br>
+    <br>
+</div>
+<div class="row">
+  <div class="column">
+   
+    <img src="{% static '/images/Girl Before a Mirror, Pablo Picasso, 1932.png' %}" alt="Snow" style="width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Portrait of Ambroise Vollard, Pablo Picasso, 1910.png' %}" alt="Forest" style="float:center;width:60%;height:60%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/The Weeping Woman, Pablo Picasso, 1937.png' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+  </div>
+  
+  <br>
+        <br>
+        <br>
+ <h2><strong> PAINTINGS OF VINCENT VAN GOGH</strong></h2>
+    <br>
+    <br>
+</div>
+<div class="row">
+  <div class="column">
+  
+    <img src="{% static '/images/Irises (1889) – Van Gogh.jpg' %}" alt="Snow" style="float:center;width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Starry Night Over the Rhône (1888).jpg' %}" alt="Forest" style="float:center;width:60%;height:60%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/The Red Vineyard (1888) – Van Gogh.jpg' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<script src="{% static '/js/javascript.js'%}">
+  
+</script>
+</body>
+</html>
+{% include 'pages/footer.html' %}

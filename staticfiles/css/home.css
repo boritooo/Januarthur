@@ -1,0 +1,31 @@
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    }
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

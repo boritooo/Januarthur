@@ -1,0 +1,72 @@
+{% load static %}
+{% include 'pages/navbar.html' %}
+
+<!Doctype html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Artists</title>
+    <link rel ="icon" type="images/x-icon" href="{% static '/images/logo.ico' %}">
+     <link rel="stylesheet" href="{% static '/css/department.css' %}">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+
+<style>
+   td, th, h3{
+    color:blanchedalmond ;
+  }
+     body{
+  background-image: url("{%static 'images/natural-history-museum-london-1366x768_97975-mm-90.jpg'%}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+{% include 'pages/navbar.html' %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+      <h3> List of Famous Painters</h3>
+      <br>
+      <br>
+      </center>
+        <table>
+        <tr>
+       
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date Started</th>
+        <th>Age</th>
+        <th>View</th>
+        <th>Create</th>
+        <th>Update</th>
+        <th>Remove</th>
+        
+        </tr>
+        {% for painter in painters %}
+<tr>
+       <td>{{painter.id}}</td>
+       <td>{{painter.name}}</td>
+       <td> {{painter.date_born}}</td>   
+       <td> {{painter.age}}</td> 
+      
+   <td> <a href="{% url 'painterinfo' %} ">Click this to view </a></td>
+   <td> <a href="{% url 'createpainterPage' %}">Create</a></td>
+   <td> <a href="{% url 'updatePage' painter.id  %}">Update</a></td>
+   <td> <a href="{% url 'DeletePainter' painter.id  %}">Delete </a></td>
+   {% endfor %}
+       
+    </tr>
+   
+</table>
+       
+
+<script src="{% static '/js/javascript.js'%}">
+</script>
+</body>
+</html>

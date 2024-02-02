@@ -1,0 +1,15 @@
+{% load static %}
+
+
+  <header class="header">
+    <image alt="logo" width="50" height="50" type src="{% static 'images/download.png' %}"></image>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="{% url 'homePage' %}">Home</a>
+            <a href="{% url 'sculpturePage' %}">Sculptures</a>
+            <a href="{% url 'paintingPage' %}">Paintings</a>
+            <a href="{% url 'painterPage' %}">Painter</a>
+          
+            
+        </nav>
+    </header>

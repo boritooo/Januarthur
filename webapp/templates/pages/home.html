@@ -1,0 +1,139 @@
+
+{% extends 'pages/index.html'%}
+{% load static %}
+
+
+{% block content %}
+<style>
+  p, h3, h4{
+    color:blanchedalmond ;
+  }
+   body{
+  background-image: url("{%static 'images/natural-history-museum-london-1366x768_97975-mm-90.jpg'%}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  * {
+  box-sizing: border-box;
+}
+
+.column {
+  padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+    <div class="row">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel" >
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox"><center>
+            <div class="carousel-item active">
+              <img src="{% static 'images/wallpaperflare.com_wallpaper.jpg' %}" class="w-100 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'images/HD wallpaper_ 1920x1080 px Hokusai Mount Fuji The Great Wave Off Kanagawa Anime Full Metal Alchemist HD Art.jpg' %}" class="w-100 d-block" alt="Second slide" >
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'images/abstract.jpg' %}" class="w-100 d-block" alt="Third slide" >
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+  </div>
+  <div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h3><center>WELCOME TO JUST PAINT</h3>
+  <br>
+  <br>
+  <br>
+<p>
+  <span> This is Just Paint Website! Here in our website, you will see a different paintings and sculptures from the famous painters and sculptors.</span>
+    <span>
+      And also, you will meet some famous sculptors and painters in our website. There are descriptions in the paintings and sculpures picture that is about who made the artworks. 
+  </span>
+  <span>
+    Also, there are list of painters and sculptors available in our website that you might wanted to learn about their life before.
+  </span>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+  <div class ="img-sample">
+    <h3> Here are some examples of artwork form different famous painters and sculptors.</h3>
+<br>
+<br>
+  <div class="row">
+  <div class="column">
+    <h3><strong> Starry Night by Vincent Van Gogh</strong></h3>
+    <img src="{% static 'images/starry_night_full.jpg' %}" alt="Starry night" style="float:center;width:60%;height:60%;">
+    <br>
+    <br>
+    <br>
+
+    <h4><strong> THE STORY OF STARRY NIGHT</strong></h4>
+    <p>Vincent van Gogh painted Starry Night in 1889 during his stay at the asylum of Saint-Paul-de-Mausole near Saint-Rémy-de-Provence. 
+      Van Gogh lived well in the hospital; he was allowed more freedoms than any of the other patients.
+      If attended, he could leave the hospital grounds; he was allowed to paint, read, and withdraw into his own room. He was even given a studio.
+      While he suffered from the occasional relapse into paranoia and fits - officially he had been diagnosed with epileptic fits - it seemed his mental health was recovering.
+      Unfortunately, he relapsed. He began to suffer hallucination and have thoughts of suicide as he plunged into depression.
+      Accordingly, there was a tonal shift in his work. He returned to incorporating the darker colors from the beginning of his career and 
+      Starry Night is a wonderful example of that shift. Blue dominates the painting, blending hills into the sky. 
+      The little village lays at the base in the painting in browns, greys, and blues. Even though each building is clearly outlined in black, 
+      the yellow and white of the stars and the moon stand out against the sky, drawing the eyes to the sky. They are the big attention grabber of the painting.</p>
+    
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="column">
+      <h3><strong> Spoliarium by Juan Luna</strong></h3>
+      <img src="{% static 'images/Spoliarium 1884.png' %}" alt="Spoliarium" style="float:center;width:60%;height:60%;">
+      <br>
+      <br>
+      <br>
+  
+      <h4><strong> THE STORY OF SPOLIARIUM</strong></h4>
+      <p>The Spoliarium by Juan Luna is truly an overwhelming type of art.
+        You’d be left in awe at the mere sight of it. 
+        It makes you feel proud to be a Filipino and it’s also proof that Filipino’s can do amazing things.
+        The painting features a glimpse of Roman history centered on the bloody carnage brought by gladiatorial matches. 
+        Spoliarium is a Latin word referring to the basement of the Roman Colosseum where the fallen and dying gladiators
+        are dumped and devoid of their worldly possessions.
+        The paintings shows how once the gladiators die, for the entertainment of Rome, they’re just dumped there and the spectators
+        just take their possessions while their loved ones cry and mourn.
+        Juan Luna used this as a form to indiscreetly tell the suffering of the Filipino’s from the Spaniards as they also sort of treat them like the Roman gladiators.</p>
+          
+
+      
+    </div>
+
+{% endblock %}
