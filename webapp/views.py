@@ -20,9 +20,9 @@ def painter_page(request):
     return render(request,  'pages/painter.html',{'painters':painters})
 
 def painter_info(request):
-    painters = Painter.objects.all()
+    painter = Painter.objects.all()
     context ={
-        'painters':painters,
+        'painters':painter,
         
     }
     return render(request, 'pages/painter_info.html', context)

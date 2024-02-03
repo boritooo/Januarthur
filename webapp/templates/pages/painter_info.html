@@ -15,11 +15,11 @@
 
       {% for painter in painters %}
       <h3>Picture: <img src="{{painter.profile_picture.url}}" style="width: 100px; height: 100px;"></h3>
-      <h3>Name: {{painter.name}}</h3>
-      <h3>Email:{{painter.email}}</h3>
-      <h3>Age: {{painter.age}}</h3>
-      <h3>Date Started:{{painter.date_born}}</h3>
-      <h3>Description:{{painter.description}}</h3>
+      <h3>Name: {{painter.name}}</h3><br>
+      <h3>Email:{{painter.email}}</h3><br>
+      <h3>Age: {{painter.age}}</h3><br>
+      <h3>Date Started:{{painter.date_born}}</h3><br>
+      <h3>Description:{{painter.about}}</h3><br>
       {% endfor %}
            
 </html>

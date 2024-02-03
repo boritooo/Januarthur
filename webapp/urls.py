@@ -9,7 +9,7 @@ urlpatterns = [
     path('painterprofile/', views.painter_info, name="painterinfo"),
     path('create_painter/', views.createpainter_form, name="createpainterPage"),
     path('update_painter/<int:pk>/', views.updatePainter, name="updatePage"),
-    path('delete_painter/<int:pk>/', views.deletePainter, name="DeletePainter")
+    path('delete_painter/<int:pk>', views.deletePainter, name="DeletePainter")
     
     
 

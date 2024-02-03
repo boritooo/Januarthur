@@ -1,0 +1,139 @@
+
+{% load static %}
+<!Doctype html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sculptures</title>
+    <link rel ="icon" type="images/x-icon" href="{% static '/images/logo.ico' %}">
+     <link rel="stylesheet" href="{% static '/css/campus.css' %}">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+<style>
+    h2, h3{
+    color:blanchedalmond ;
+  }
+     body{
+  background-image: url("{%static 'images/natural-history-museum-london-1366x768_97975-mm-90.jpg'%}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+    * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left ;
+        width: 33%;
+        height: 33%;
+        padding: 10px;
+      }
+      
+  
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+</head>
+<body>
+{% include 'pages/navbar.html' %}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+      <h3> <center> SCULPTURES</h3>
+        <br>
+        <br>
+        <br>
+<center>
+    <h2><strong> SCULPTURES OF ABDUL MARI ASIA IMAO</strong></h2>
+    <br>
+    <br>
+    <center>
+        <div class="row">
+  <div class="column">
+    <img src="{% static '/images/Sarimanok 2009.jpg' %}" alt="Snow" style="float:center;width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Sarimanok Series , 1983.jpg' %}" alt="Forest" style="float:center;width:60%;height:60%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Sarimanok Series, 2007.jpg' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+</div>
+<br>
+<br>
+<br>
+ <h2><strong> SCULPTURES OF DONATELO</strong></h2>
+<br>
+<br>
+<div class="row">
+  <div class="column">
+   
+    <img src="{% static '/images/David 1440.jpg' %}" alt="Snow" style="float:center;width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Saint John The Evangelist 1410-1411.jpg' %}" alt="Forest" style="float:center;width:60%;height:50%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/St Louis of Toulouse 1421-1425.jpg' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+  </div>
+  <br>
+        <br>
+        <br>
+        
+ <h2><strong>SCULPTURES OF GUILLERMO TOLENTINO</strong></h2>
+    <br>
+    <br>
+</div>
+<div class="row">
+  <div class="column">
+   
+    <img src="{% static '/images/Future Champion 1954.jpg' %}" alt="Snow" style="width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Homage to Rizal and His _Triumph of Science over Death 1915.webp' %}" alt="Forest" style="float:center;width:60%;height:60%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Oblation 1935.jpg' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+  </div>
+  
+  <br>
+        <br>
+        <br>
+ <h2><strong>SCULPTURES OF MICHAEL ANGELO</strong></h2>
+    <br>
+    <br>
+</div>
+<div class="row">
+  <div class="column">
+  
+    <img src="{% static '/images/Brutus 1539-40.JPG' %}" alt="Snow" style="float:center;width:60%;height:60%;" >
+  </div>
+  <div class="column">
+    <img src="{% static '/images/Madonna of Bruges 1501-1504.jpg' %}" alt="Forest" style="float:center;width:60%;height:60%;">
+  </div>
+  <div class="column">
+    <img src="{% static '/images/The Genius of Victory 1532–1534.jpg' %}" alt="Mountains" style="float:center;width:60%;height:60%;">
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<script src="{% static '/js/javascript.js'%}">
+  
+</script>
+</body>
+</html>
+{% include 'pages/footer.html' %}
